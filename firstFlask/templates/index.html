@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+    <ul>
+        {% for k, j in user_dict.items()%}
+            {# k 为索引值，j 为人员信息字典  #}
+            <li> {{ j.name }} <a href="/detail?uid={{ k }}">查看详细</a></li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
