@@ -7,7 +7,7 @@ __time__ = "2022/9/11 19:17"
 
 class Config:
     """基础的配置字"""
-    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://admin:lzkA123@127.0.0.1:3306/bot?charset=utf8"
+    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:123456@127.0.0.1:3306/bot?charset=utf8"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_ECHO = True
     SUPER_USER = ["3500515050", ]  # 超级用户
@@ -16,6 +16,7 @@ class Config:
 
 class Url:
     ACGIMG = [
+        # 二次元图片链接
         "https://api.ghser.com/random/api.php",
         "https://www.dmoe.cc/random.php",
         "https://api.mtyqx.cn/api/random.php",
